@@ -5,10 +5,10 @@ gsap.set("#ir_logo", { opacity: 0 });
 
 gsap.registerPlugin(ScrambleTextPlugin);
 
-gsap.to(".tagline_0", { duration: 1, chars: "upperAndLowerCase", scrambleText: "Your" });
-gsap.to(".tagline_1", { duration: 1.25, chars: "upperAndLowerCase", scrambleText: "Data." });
-gsap.to(".tagline_2", { duration: 1.25, chars: "upperAndLowerCase", scrambleText: "Business." });
-gsap.to(".tagline_3", { duration: 1.25, chars: "upperAndLowerCase", scrambleText: "Story." });
+gsap.to(".tagline_0", { duration: 1, scrambleText: {text:"Your", chars: "01" }});
+gsap.to(".tagline_1", { duration: 1.25, chars: "01", scrambleText: "Data." });
+gsap.to(".tagline_2", { duration: 1.25, chars: "01", scrambleText: "Business." });
+gsap.to(".tagline_3", { duration: 1.25, chars: "01", scrambleText: "Story." });
 gsap.to(".tagline", { opacity: 0, delay: 4, duration: 1 });
 
 gsap.to(".layer", { opacity: 0.4, delay: 2, duration: 2, stagger: { each: 0.03, ease: "power2.inOut" } });

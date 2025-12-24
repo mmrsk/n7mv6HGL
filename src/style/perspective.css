@@ -1,0 +1,41 @@
+@import url("https://use.typekit.net/jyq2vzj.css");
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://unpkg.com/modern-normalize@3.0.1/modern-normalize.css');
+@import url('reset.css')
+
+body {
+    background: #0F5098;
+}
+a {
+    transition: opacity 0.3s ease-in-out;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../images/background-image.png) center center / 120% 120% no-repeat ;
+    animation: shrink 6s infinite alternate;
+}
+@keyframes shrink {
+    0% {
+        background-size: 140% 140%;
+    }
+    100% {
+        background-size: 120% 120%
+    }
+}
+.logo-outer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+}
+
+.layer{
+    fill: #ffffff;
+    opacity: 0.3;
+}
