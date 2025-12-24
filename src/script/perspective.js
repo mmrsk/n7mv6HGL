@@ -8,10 +8,10 @@ const innerX = gsap.quickTo(".logo", "x", { ease: "power3" });
 const innerY = gsap.quickTo(".logo", "y", { ease: "power3" });
 
 main.addEventListener("pointermove", (e) => {
-  outerRX(gsap.utils.interpolate(15, -15, e.y / window.innerHeight));
-  outerRY(gsap.utils.interpolate(-15, 15, e.x / window.innerWidth));
-  innerX(gsap.utils.interpolate(-30, 30, e.x / window.innerWidth));
-  innerY(gsap.utils.interpolate(-30, 30, e.y / window.innerHeight));
+  outerRX(gsap.utils.interpolate(45, -45, e.y / window.innerHeight));
+  outerRY(gsap.utils.interpolate(-45, 45, e.x / window.innerWidth));
+  innerX(gsap.utils.interpolate(-45, 45, e.x / window.innerWidth));
+  innerY(gsap.utils.interpolate(-45, 45, e.y / window.innerHeight));
 });
 
 main.addEventListener("pointerleave", (e) => {
